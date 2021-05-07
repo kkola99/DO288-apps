@@ -1,5 +1,6 @@
 FROM node:14
 
+RUN mkdir /app
 WORKDIR /app
 COPY package.json /app
 
@@ -9,4 +10,4 @@ COPY . /app
 
 EXPOSE 3000
 
-CMD ["node", "server.js"]
+CMD [ "node", "server.js" ]
