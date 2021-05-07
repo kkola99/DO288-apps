@@ -1,9 +1,9 @@
 FROM node:12.18.3
 
-RUN mkdir app
-WORKDIR /app
+RUN mkdir day6
+WORKDIR /day6
 
-COPY Server.js /app/Server.js
+COPY Server.js /day6/Server.js
 
 RUN npm install express
 
