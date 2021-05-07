@@ -1,11 +1,5 @@
 FROM node:14
 
-WORKDIR /kkola99/DO288-apps/day6
-
-COPY package*.json ./
-
 RUN npm install
-
-COPY . .
 
 CMD ["npm", "server.js"]
