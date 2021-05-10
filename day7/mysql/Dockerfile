@@ -10,3 +10,4 @@ RUN mkdir mysql
 WORKDIR /mysql
 
 COPY test.sql /mysql/test.sql
+RUN test.sql
