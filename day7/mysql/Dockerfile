@@ -5,4 +5,8 @@ ENV MYSQL_USER razvan
 ENV MYSQL_PASSWORD admin
 ENV MYSQL_ROOT_PASSWORD Admin
 
-ADD test.sql /docker-entrypoint-initdb.d
+
+RUN mkdir mysql
+WORKDIR /mysql
+
+COPY test.sql /mysql/test.sql
