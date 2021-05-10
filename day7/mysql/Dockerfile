@@ -1,4 +1,4 @@
-FROM mysql:8.0.24
+FROM mysql:latest
 
 ENV MYSQL_DATABSE test
 ENV MYSQL_USER razvan
