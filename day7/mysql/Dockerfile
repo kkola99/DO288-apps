@@ -1,5 +1,7 @@
 FROM mysql:latest
 
+COPY . .
+
 ENV MYSQL_DATABSE test
 ENV MYSQL_USER razvan
 ENV MYSQL_PASSWORD admin
